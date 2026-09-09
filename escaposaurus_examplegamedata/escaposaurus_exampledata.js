@@ -107,8 +107,9 @@
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name*/
 		var normalContacts = [] ;
-		normalContacts[0] = {"vid" : "Denise", "vod_folder" : "", "username" : "Denise (guide)", "canal" : "video", "avatar" : "denise_avatar.jpg"} ;
-		normalContacts[1] = {"vid" : "Nathalie", "vod_folder" : "", "username" : "Nathalie (guide)", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		normalContacts[0] = {"vid" : "Archiviste", "vod_folder" : "", "username" : "George Fouille (Archiviste)", "canal" : "video", "avatar" : "Archiviste.png"} ;
+		normalContacts[1] = {"vid" : "Client", "vod_folder" : "", "username" : "Karim Du Foins (Client)", "canal" : "video", "avatar" : "Client.png"} ;
+		normalContacts[2] = {"vid" : "Vieux", "vod_folder" : "", "username" : "Jean Luc Des Prés (Vétéran)", "canal" : "video", "avatar" : "Vieux.png"} ;
 
 		/*second part of the list, contact that can help the player*/
 		var helperContacts = [] ;

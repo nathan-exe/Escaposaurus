@@ -287,7 +287,7 @@ function createContactList(){
 	var p = document.getElementById("callApp-prompt") ;
 	p.innerHTML = promptDefault;
 
-	/*removing existing stuff*/
+	/*remove existing stuff*/
 	var nc = document.getElementById("normal-contact") ;
 	while (nc.firstChild) {
 		nc.removeChild(nc.lastChild);
@@ -326,6 +326,7 @@ function createContact(contact, parent){
 	}
 
 	var im = document.createElement("img") ;
+	console.log(contactVideoRoot+contact.vid+"/"+contact.avatar);
 	im.src = contactVideoRoot+contact.vid+"/"+contact.avatar ;
 	im.classList.add("contact-avatar") ;
 
