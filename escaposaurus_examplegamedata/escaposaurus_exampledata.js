@@ -22,9 +22,9 @@
 		var contactVideoRoot = videoRoot+"contactVideo/" ;
 
 		/*full path to intro / outro video*/
-		var missionVideoPath = videoRoot+"introVideo/intro1.mp4" ;
-		var introVideoPath = videoRoot+"introVideo/intro2.mp4" ;
-		var missingVideoPath = videoRoot+"contactVideo/missing/final.mp4" ;
+		var missionVideoPath = videoRoot+"introVideo/Client_intro.mp4" ;
+		var introVideoPath = videoRoot+"introVideo/Archiviste_intro.mp4" ;
+		var missingVideoPath = videoRoot+"contactVideo/Client_epilogue.mp4" ;
 		var epilogueVideoPath = videoRoot+"epilogueVideo/epiloguecredit.mp4" ;
 
 		/*udisk JSON path*/
@@ -102,10 +102,10 @@
 		/*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 		/*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 		var seqMainHint = [] ;
-		seqMainHint[0] = "nohint" ;
-		seqMainHint[1] = "nohint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-		seqMainHint[2] = "nohint" ;
-		seqMainHint[3] = "nohint" ;
+		seqMainHint[0] = "noHint" ;
+		seqMainHint[1] = "noHint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+		seqMainHint[2] = "noHint" ;
+		seqMainHint[3] = "noHint" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name*/
