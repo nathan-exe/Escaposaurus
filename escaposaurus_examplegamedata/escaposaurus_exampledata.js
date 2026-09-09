@@ -47,16 +47,20 @@
 				{"foldername":"Moteur_de_recherche_Archives",
 			  		"files":[],
 			  		"folders":[
+					//sequence 1 : articles de journaux
 					{"foldername":"Archives_Presse","password":"saintMoulin1940","placeholder":"Paris1920","sequence":0,
 						"files":["carte1.jpg", "carte2.jpg", "carte3.jpg", "carte4.jpg"]
 					},
+					//sequence 2 : lettre codée
 					{"foldername":"Archives_Communiquations_CNR","password":"OperationDomino","placeholder":"OperationCaramel","sequence":1,
 						"files":[
 							"lettre-general-de-gaulle.jpg",
 							"lettre_glegoff_p1.jpg",
-							"tract.jpg",
+							"tract.jpg"//,
+							//""
 						]
 					},
+					//sequence 3 : cartes d'identité
 					{"foldername":"Archives_Cartes_CCVR","password":"franc-tireurs","placeholder":"rouges","sequence":2,
 						"files":["Etat_Nominatif.jpg"]
 					},
@@ -102,10 +106,10 @@
 		/*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 		/*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 		var seqMainHint = [] ;
-		seqMainHint[0] = "noHint" ;
+		seqMainHint[0] = "Lettre_Grand_Pere.png" ;
 		seqMainHint[1] = "noHint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-		seqMainHint[2] = "noHint" ;
-		seqMainHint[3] = "noHint" ;
+		seqMainHint[2] = "CC3451.jpg" ;
+		//seqMainHint[3] = "noHint" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name*/
