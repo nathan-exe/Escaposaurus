@@ -67,9 +67,9 @@
 		var gameTitle = "Le juste anonyme" ;
 		var gameDescriptionHome = "Vous êtes généalogiste spécialisé dans la recherche historique.<br/>Votre métier est de reconstituer l'histoire de personnages historiques anonymes en explorant divers archives." ;
 		var gameMissionCall = "Nouveau client : Karim a trouvé une photo et une lettre dans le grenier de son grand-père décédé." ;
-		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger la clé USB dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
+		var gameMissionAccept = "&raquo;&raquo; Retrouver le résistant qui a sauvé le grand-père de Karim pendant la guerre&laquo;&laquo;" ;
 
-		var gameCredit = "Un jeu conçu et réalisé par : <br/>Stéphanie Mader" ;
+		var gameCredit = "Un jeu conçu et réalisé par : <br/>Maxim Raymond <br/>Arzel Gomezlinot <br/>Quentin Borredon <br/>Timothée Bourson <br/>Ernest Bruyere <br/>Axel Gauthier <br/>Nathan Tazi" ;
 		var gameThanks = "Remerciements : <br/> ;)" ;
 
 		var OSName = "Special InformaticienOS 3.11- diskloaded: Escaposaurus_Example" ;
@@ -112,7 +112,7 @@
 
 		/*second part of the list, contact that can help the player*/
 		var helperContacts = [] ;
-		helperContacts[0] = {"vid" : "Archiviste_help", "vod_folder" : "", "username" : "George Fouille (pour avoir un indice)", "canal" : "txt", "avatar" : "Archiviste.png", "bigAvatar" : "Archivistebig.png"} ;
+		helperContacts[0] = {"vid" : "Archiviste_help", "vod_folder" : "", "username" : "George Fouille (pour avoir un indice)", "canal" : "txt", "avatar" : "Archiviste_help.png", "bigAvatar" : "Archiviste_help.png"} ;
 		/*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 		/*ce qui apparait quand on trouve le dernier élément du disque dur*/
