@@ -76,7 +76,7 @@
 
 		var OSName = "Special InformaticienOS 3.11- diskloaded: Escaposaurus_Example" ;
 		var explorerName = "ARCHIVES" ;
-		var callerAppName = "CALL CONTACT" ;
+		var callerAppName = "APPELER QUELQU'UN" ;
 
 		/*titles of video windows*/
 		var titleData = {} ;

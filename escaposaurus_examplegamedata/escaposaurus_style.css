@@ -80,12 +80,17 @@ video{max-width: 960px;}
 /*shared style for app*/
 .app-title{
 	height:50px;
-	background-color: #1022CC;
-	border:1px solid white;
-	color: white;
+	color: black;
 	text-align:center;
 	display: flex;
 	place-items: center;
+}
+
+#folderApp > .app-title {
+	background-image:url(img/folder.jpg);
+	border-radius: 1rem 1rem 0 0;
+	box-shadow: inset 0 -2px 2px rgb(57, 57, 57);
+	width : fit-content;
 }
 
 .app-title-span{
@@ -93,7 +98,7 @@ video{max-width: 960px;}
 	font-size:24px;
 	display: flex;
 	place-items: center;
-	margin-left: 1rem;
+	margin: 0 1rem;
 }
 
 /*call app*/
@@ -102,8 +107,9 @@ video{max-width: 960px;}
 	height:auto;
 	padding:0 0 0 0;
 	margin:50 100 12 50;
-	background-color:#fff;
-	border:2px solid black;
+	background: url(img/paper_1.jpg);
+	border-radius: .5rem;
+	box-shadow: 2px 2px 2px rgb(39, 39, 39);
 	overflow: auto;
 }
 
@@ -111,7 +117,7 @@ video{max-width: 960px;}
 	font-size:18px;
 	padding:10px;
 	text-align: center;
-	background-color:#ccc;
+	background-color:#24232331;
 	color:black;
 }
 
@@ -142,7 +148,7 @@ video{max-width: 960px;}
 .no-call{
 	font-weight: normal;
 	font-style: italic;
-	color:#aaaaaa;
+	color:#656565;
 }
 
 .already-called{
@@ -152,17 +158,17 @@ video{max-width: 960px;}
 /* udisk app*/
 #folderApp{
 	width:450px;
-	height:650px;
 	overflow: auto;
 	padding:0 0 0 0;
 	margin:50 0 0 150;
-	background-color:#fff;
-	border:2px solid black;
+	box-shadow: 2px 2px 2px rgb(39, 39, 39);
 }
 
 #folderApp-content{
 	padding:10px;
 	text-align: left;
+	background-image:url(img/folder.jpg);
+	border-radius: 0 0 1rem 1rem;
 }
 
 #overlay-index{
@@ -288,7 +294,6 @@ video{max-width: 960px;}
 #footer{
 	height:34px;
 	width:100%;
-	background-color:#1022CC;
 	position: absolute;
 	padding-top:3px;
 	padding-bottom:3px;
@@ -297,14 +302,14 @@ video{max-width: 960px;}
 }
 
 .footer-button{
-	color:#000;
-	background-color: #fff;
-	border:none;
+	color:black;
+	background-image: url(img/paper_1.jpg);
+	border-radius: .5rem .5rem 0 0;
 	margin-right:5px;
-	padding:3px;
+	padding: 3px 10px 3px 10px;
 	font-family: Roboto ;
 	font-size:16px;
-	font-weight:bold;
+	font-family: Elite;
 }
 
 .footer-button:hover{
