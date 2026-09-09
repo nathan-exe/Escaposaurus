@@ -42,7 +42,7 @@
 		  		[
 				{
 					"foldername":"Dossier_Karim_DuFoin",
-			  		"files":["Lettre_Grand_Pere.png","Photo_Homme_Anonyme.png"]
+			  		"files":["Lettre_Grand_Pere.png","photo_recto.jpg","photo_verso.jpg"]
 				},
 				{"foldername":"Moteur_de_recherche_Archives",
 			  		"files":[],
@@ -60,17 +60,13 @@
 			  	}
 		  		
 		 		],
-			"files":[
-				"scan_memo.png",
-				"photo_devant.jpg",
-				"photo_arriere.jpg"
-			]}
+			"files":[]}
 		} ;
 
 		//situation initiale
-		var gameTitle = "Escaposaurus Scenario Exemple" ;
-		var gameDescriptionHome = "Ceci est une courte aventure d'exemple pour montrer ce que le framework Escaposaurus permet facilement de réaliser.<br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>" ;
-		var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données" ;
+		var gameTitle = "Le juste anonyme" ;
+		var gameDescriptionHome = "Vous êtes généalogiste spécialisé dans la recherche historique.<br/>Votre métier est de reconstituer l'histoire de personnages historiques anonymes en explorant divers archives." ;
+		var gameMissionCall = "Nouveau client : Karim a trouvé une photo et une lettre dans le grenier de son grand-père décédé." ;
 		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger la clé USB dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
 
 		var gameCredit = "Un jeu conçu et réalisé par : <br/>Stéphanie Mader" ;
@@ -102,10 +98,10 @@
 		/*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 		/*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 		var seqMainHint = [] ;
-		seqMainHint[0] = "scan_memo.png" ;
-		seqMainHint[1] = "aucun" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-		seqMainHint[2] = "aucun" ;
-		seqMainHint[3] = "swisstopo-screen.png" ;
+		seqMainHint[0] = "nohint" ;
+		seqMainHint[1] = "nohint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+		seqMainHint[2] = "nohint" ;
+		seqMainHint[3] = "nohint" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name*/
@@ -116,22 +112,22 @@
 
 		/*second part of the list, contact that can help the player*/
 		var helperContacts = [] ;
-		helperContacts[0] = {"vid" : "Albert", "vod_folder" : "", "username" : "Albert (pour avoir un indice)", "canal" : "txt", "avatar" : "albert.png", "bigAvatar" : "albertbig.png"} ;
+		helperContacts[0] = {"vid" : "Archiviste_help", "vod_folder" : "", "username" : "George Fouille (pour avoir un indice)", "canal" : "txt", "avatar" : "Archiviste.png", "bigAvatar" : "Archivistebig.png"} ;
 		/*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 		/*ce qui apparait quand on trouve le dernier élément du disque dur*/
-		finalStepAdded = "ID du GPS transmise aux secours." ;
+		finalStepAdded = "Vous avez identifié le juste anonyme de la photo !" ;
 
 		/*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
 		var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Nathalie",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
 
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;
-		tips['Albert'] = [] ;
-		tips['Albert'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom d'un guide ? Je crois que les contacts sont des guides justement, essayez peut-être de les appeler." ;
-		tips['Albert'][1] = "" ;
-		tips['Albert'][2] = "" ;
-		tips['Albert'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
+		tips['Archiviste_help'] = [] ;
+		tips['Archiviste_help'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom d'un guide ? Je crois que les contacts sont des guides justement, essayez peut-être de les appeler." ;
+		tips['Archiviste_help'][1] = "" ;
+		tips['Archiviste_help'][2] = "" ;
+		tips['Archiviste_help'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
 
 
 		/*text for the instruction / solution windows*/
