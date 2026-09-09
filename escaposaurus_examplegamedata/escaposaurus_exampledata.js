@@ -76,6 +76,9 @@
 							"CC1247.jpg",
 						]
 					},
+					{"foldername":"Archives_Resistants_CCVR","password":"yves-le-champ","placeholder":"AxelBuendia","sequence":3,
+						"files":[]
+					}
 					]
 			  	}
 		  		
