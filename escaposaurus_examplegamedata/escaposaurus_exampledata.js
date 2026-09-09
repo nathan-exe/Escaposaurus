@@ -71,7 +71,7 @@
 		var gameTitle = "Le juste anonyme" ;
 		var gameDescriptionHome = "Vous êtes généalogiste spécialisé dans la recherche historique.<br/>Votre métier est de reconstituer l'histoire de personnages historiques anonymes en explorant divers archives." ;
 		var gameMissionCall = "Nouveau client : Karim a trouvé une photo et une lettre dans le grenier de son grand-père décédé." ;
-		var gameMissionAccept = "&raquo;&raquo; Retrouver le résistant qui a sauvé le grand-père de Karim pendant la guerre&laquo;&laquo;" ;
+		var gameMissionAccept = "Retrouver le résistant qui a sauvé le grand-père de Karim pendant la guerre" ;
 
 		var gameCredit = "Un jeu conçu et réalisé par : <br/>Maxim Raymond <br/>Arzel Gomezlinot <br/>Quentin Borredon <br/>Timothée Bourson <br/>Ernest Bruyere <br/>Axel Gauthier <br/>Nathan Tazi" ;
 		var gameThanks = "Remerciements : <br/> ;)" ;
