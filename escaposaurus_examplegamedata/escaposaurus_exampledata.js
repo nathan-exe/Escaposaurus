@@ -40,6 +40,10 @@
 	  	{"root":{
 	  		"folders":
 		  		[
+				{
+					"foldername":"Dossier_Karim_DuFoin",
+			  		"files":["Lettre_Grand_Pere.png","Photo_Homme_Anonyme.png"]
+				},
 				{"foldername":"Moteur_de_recherche_Archives",
 			  		"files":[],
 			  		"folders":[
