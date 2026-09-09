@@ -42,27 +42,39 @@
 		  		[
 				{
 					"foldername":"Dossier_Karim_DuFoin",
-			  		"files":["Lettre_Grand_Pere.png","photo_recto.jpg","photo_verso.jpg"]
+			  		"files":[
+						"Lettre_Grand_Pere.png",
+						"photo_recto_verso.jpg",
+						"papier.jpg"
+					]
 				},
 				{"foldername":"Moteur_de_recherche_Archives",
 			  		"files":[],
 			  		"folders":[
 					//sequence 1 : articles de journaux
 					{"foldername":"Archives_Presse","password":"saintMoulin1940","placeholder":"Paris1920","sequence":0,
-						"files":["carte1.jpg", "carte2.jpg", "carte3.jpg", "carte4.jpg"]
+						"files":[
+							"LPP_12041940.jpg",
+							"LPP_08071940.jpg"
+						]
 					},
 					//sequence 2 : lettre codée
 					{"foldername":"Archives_Communiquations_CNR","password":"OperationDomino","placeholder":"OperationCaramel","sequence":1,
 						"files":[
-							"lettre-general-de-gaulle.jpg",
-							"lettre_glegoff_p1.jpg",
-							"tract.jpg"//,
-							//""
+							"lettre_0899.jpg",
+							"lettre_1534.jpg",
+							"lettre_2112.jpg",
+							"lettre_5849.jpg",
 						]
 					},
 					//sequence 3 : cartes d'identité
 					{"foldername":"Archives_Cartes_CCVR","password":"franc-tireurs","placeholder":"rouges","sequence":2,
-						"files":["Etat_Nominatif.jpg"]
+						"files":[
+							"CC3451.jpg",
+							"CC4310.jpg",
+							"CC9123.jpg",
+							"CC1247.jpg",
+						]
 					},
 					]
 			  	}
