@@ -64,6 +64,9 @@
 					{"foldername":"Archives_Cartes_CCVR","password":"franc-tireurs","placeholder":"rouges","sequence":2,
 						"files":["Etat_Nominatif.jpg"]
 					},
+					{"foldername":"Archives_Resistants_CCVR","password":"yves-le-champ","placeholder":"AxelBuendia","sequence":3,
+						"files":[]
+					}
 					]
 			  	}
 		  		

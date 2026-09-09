@@ -41,9 +41,8 @@ video{max-width: 960px;}
 /*main div container*/
 #main-container{
 	max-width: 1300px;
-	max-height:800px;
+	min-height: 100vh;
 	margin: auto;
-	height:100%;
 	text-align: center;
 	position:relative;
 	
@@ -211,6 +210,7 @@ video{max-width: 960px;}
 	text-align: left;
 	background-image:url(img/folder.jpg);
 	border-radius: 0 1rem 1rem 1rem;
+	margin-bottom : 5rem;
 }
 
 #overlay-index{
@@ -348,7 +348,7 @@ cursor: pointer;
 #footer{
 	height:34px;
 	width:100%;
-	position: absolute;
+	position: fixed;
 	padding-top:3px;
 	padding-bottom:3px;
 	bottom: 0;
