@@ -9,69 +9,83 @@
 -->*/
 
 /*by default there is no margin or padding anywhere*/
-*{ margin: 0px; padding: 0px; }
-a{color:#1022CC;}
-body{font-family: Arial;}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: #1022CC;
+}
+
+body {
+	font-family: Arial;
+}
 
 /*on veut la lightbox devant*/
 .lightbox-container {
-	z-index:302;
+	z-index: 302;
 }
 
-video{max-width: 960px;}
+video {
+	max-width: 960px;
+}
 
 @font-face {
-    font-family: Roboto;
-    src: url('img/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+	font-family: Roboto;
+	src: url('img/fonts/Roboto/Roboto-Light.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: Odibee;
-    src: url('img/fonts/Odibee_Sans/OdibeeSans-Regular.ttf') format('truetype');
+	font-family: Odibee;
+	src: url('img/fonts/Odibee_Sans/OdibeeSans-Regular.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: Elite;
-    src: url('img/fonts/special-elite/SpecialElite.ttf') format('truetype');
+	font-family: Elite;
+	src: url('img/fonts/special-elite/SpecialElite.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: W95;
-    src: url('img/fonts/W95F.otf') format('truetype');
+	font-family: W95;
+	src: url('img/fonts/W95F.otf') format('truetype');
 }
 
 /*size of the countainer defined to fit most used screen resolution*/
 /*main div container*/
-#main-container{
+#main-container {
 	max-width: 1300px;
 	min-height: 100vh;
 	margin: auto;
 	text-align: center;
-	position:relative;
-	
+	position: relative;
+
 	background: url(img/background.jpg);
 	background-position: center;
-	background-color:#1022CC;
+	background-color: #1022CC;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-#main-container-index{
+#main-container-index {
 	max-width: 1300px;
-	max-height:800px;
+	max-height: 800px;
 	margin: auto;
-	height:100%;
-	border:1px solid #1022CC;
+	height: 100%;
+	border: 1px solid #1022CC;
 	text-align: center;
-	position:relative;
+	position: relative;
 }
 
-#container-homeMission{
-	width:800px;
-	background: radial-gradient(circle,rgba(80, 117, 135, 1) 0%, rgba(48, 68, 92, 1) 100%);
+#container-homeMission {
+	width: 800px;
+	background: radial-gradient(circle, rgba(80, 117, 135, 1) 0%, rgba(48, 68, 92, 1) 100%);
 	border-radius: 1.5rem;
 	box-shadow: inset 0 0 30px rgb(38, 38, 38),
-	6px 6px 0 rgb(227, 227, 221),
-	-6px -6px 0 rgb(152, 152, 148);
-	margin-top:20px;
-	padding-bottom:20px;
+		6px 6px 0 rgb(227, 227, 221),
+		-6px -6px 0 rgb(152, 152, 148);
+	margin-top: 20px;
+	padding-bottom: 20px;
 	font-family: W95;
 }
 
@@ -79,7 +93,7 @@ video{max-width: 960px;}
 	background-color: #d9d9d9;
 	max-width: 80%;
 	box-shadow: 2px 2px 0 black,
-	-2px -2px 0 white;
+		-2px -2px 0 white;
 	color: black;
 	margin: auto auto;
 }
@@ -88,16 +102,16 @@ video{max-width: 960px;}
 	margin: 0;
 }
 
-#container-homeMission h3{
+#container-homeMission h3 {
 	background-color: #7a7a7a;
 	color: #d9d9d9;
 	padding: 4px;
 }
 
-#div-homeMission{
+#div-homeMission {
 	background-color: #d9d9d9;
 	box-shadow: 2px 2px 0 black,
-	-2px -2px 0 white;
+		-2px -2px 0 white;
 	max-width: 60%;
 	margin: auto auto;
 }
@@ -107,30 +121,30 @@ video{max-width: 960px;}
 	border-radius: 1rem;
 }
 
-#main-game-div{
-	width:100%;
+#main-game-div {
+	width: 100%;
 }
 
 /*shared style for app*/
-.app-title{
-	height:50px;
+.app-title {
+	height: 50px;
 	color: black;
-	text-align:center;
+	text-align: center;
 	display: flex;
 	place-items: center;
 }
 
-#folderApp > .app-title {
-	background-image:url(img/folder.jpg);
+#folderApp>.app-title {
+	background-image: url(img/folder.jpg);
 	border-radius: 1rem 1rem 0 0;
 	box-shadow: inset 0 -2px 2px rgba(40, 40, 40, 0.489);
-	width : fit-content;
+	width: fit-content;
 	height: auto;
 }
 
-.app-title-span{
-	font-family: Elite ;
-	font-size:24px;
+.app-title-span {
+	font-family: Elite;
+	font-size: 24px;
 	display: flex;
 	place-items: center;
 	margin: .5rem 1rem 0 1rem;
@@ -143,98 +157,114 @@ video{max-width: 960px;}
 }
 
 /*call app*/
-#callApp{
-	width:500px;
-	height:auto;
-	padding:0 0 0 0;
-	margin:50 100 12 50;
+#callApp {
+	width: 500px;
+	height: auto;
+	padding: 0 0 0 0;
+	margin: 50 100 12 50;
 	background: url(img/paper_1.jpg);
 	border-radius: .5rem;
 	box-shadow: 2px 2px 2px rgb(39, 39, 39);
 	overflow: auto;
 }
 
-#callApp-help, #callApp-prompt{
-	font-size:18px;
-	padding:10px;
+#callApp-help,
+#callApp-prompt {
+	font-size: 18px;
+	padding: 10px;
 	text-align: center;
-	background-color:#24232331;
-	color:black;
+	background-color: #24232331;
+	color: black;
 }
 
-.contact-list{
-	padding:10px;
+.contact-list {
+	padding: 10px;
 	text-align: left;
 }
 
-.contact-div{
-	font-size:16px;
+.contact-div {
+	font-size: 16px;
 	text-align: left;
-	margin-bottom:5px;
+	margin-bottom: 5px;
 	font-weight: bold;
 }
 
-.contact-div:hover{
-	background:#1022CC;
+.contact-div:hover {
+	background: #1022CC;
 	cursor: pointer;
-	color:fff;
+	color: fff;
 }
 
-.contact-avatar{
-	width:36px;
-	height:36px;
-	margin-right:5px;
+.contact-avatar {
+	width: 36px;
+	height: 36px;
+	margin-right: 5px;
 }
 
-.no-call{
+.no-call {
 	font-weight: normal;
 	font-style: italic;
-	color:#656565;
+	color: #656565;
 }
 
-.already-called{
+.already-called {
 	font-weight: normal;
 }
 
 /* udisk app*/
-#folderApp{
-	width:450px;
+#folderApp {
+	width: 450px;
 	overflow: auto;
-	padding:0 0 0 0;
-	margin:50 0 0 150;
+	padding: 0 0 0 0;
+	margin: 50 0 0 150;
 	box-shadow: 2px 2px 2px rgb(39, 39, 39);
 }
 
-#folderApp-content{
-	padding:10px;
+#folderApp-content {
+	padding: 10px;
 	text-align: left;
-	background-image:url(img/folder.jpg);
+	background-image: url(img/folder.jpg);
 	border-radius: 0 1rem 1rem 1rem;
-	margin-bottom : 5rem;
+	margin-bottom: 5rem;
 }
 
-#overlay-index{
-	position:absolute;
-	z-index:310;
-	left:0%;
-	top:0%;
+#overlay-index {
+	position: absolute;
+	z-index: 310;
+	left: 0%;
+	top: 0%;
 
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 	background-color: #bec0b1;
 	text-align: center;
 }
 
 /*the "windows" we open for video and message/password*/
 #callVideo-window,
-#UIvid-window{
-	position:absolute;
-	z-index:305;
-	left:20%;
-	top:10%;
-	border:1px solid white;
-	background-color:#000;
+#UIvid-window {
+	position: absolute;
+	z-index: 305;
+	max-height: 80vh;
+	top: 5rem;
+	left: 0;
+	margin: auto auto;
+	border: 1px solid white;
+	background-color: #d9d9d9;
 	text-align: center;
+
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: fit-content;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#callVideo-window video {
+	max-height: 60vh;
 }
 
 #notnowPrompt-window,
@@ -245,39 +275,38 @@ video{max-width: 960px;}
 #message-window,
 #nocall-window,
 #solution-window,
-#credit-window{
-	position:absolute;
-	z-index:300;
-	left:45%;
-	top:35%;
-	border:1px solid white;
-	background-color:#000;
-	width:200px;
+#credit-window {
+	position: absolute;
+	z-index: 300;
+	left: 45%;
+	top: 35%;
+	border: 1px solid white;
+	background-color: #000;
+	width: 200px;
 }
 
-#passPrompt-window
-{
-	width:350px;
+#passPrompt-window {
+	width: 350px;
 }
 
 #solution-window,
-#credit-window{
-	background-color:#777;
+#credit-window {
+	background-color: #777;
 }
 
-#solution-window{
-	top:20%;
-	width:400px;
+#solution-window {
+	top: 20%;
+	width: 400px;
 }
 
-#credit-window{
-	top:20%;
-	width:400px;
+#credit-window {
+	top: 20%;
+	width: 400px;
 }
 
 /*we override part of the lightbox style*/
-.lightbox-image{
-	max-height:90vh;
+.lightbox-image {
+	max-height: 90vh;
 }
 
 #notnowPrompt-window button,
@@ -290,31 +319,30 @@ video{max-width: 960px;}
 #message-window button,
 #nocall-window button,
 #solution-window button,
-#credit-window button
-{
-	color:#fff;
+#credit-window button {
+	color: #fff;
 	background-color: #1022CC;
 	border: none;
-	padding:3px;
-	margin:3px;
-	font-family: Roboto ;
-	font-size:14px;
-	font-weight:bold;
+	padding: 3px;
+	margin: 3px;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 #overlay-index button {
 	padding: .5rem;
-background-color: #d9d9d9;
-border: solid 1px black;
-box-shadow: inset -2px -2px 0 black,
-inset 2px 2px 0 white;
-margin-bottom: 1rem;
+	background-color: #d9d9d9;
+	border: solid 1px black;
+	box-shadow: inset -2px -2px 0 black,
+		inset 2px 2px 0 white;
+	margin-bottom: 1rem;
 }
 
-#overlay-index button:hover{
+#overlay-index button:hover {
 	background-color: #d9d9d9;
 	box-shadow: inset 2px 2px 0 black,
-	inset -2px -2px 0 white;
+		inset -2px -2px 0 white;
 }
 
 #notnowPrompt-window button:hover,
@@ -327,52 +355,52 @@ margin-bottom: 1rem;
 #message-window button:hover,
 #nocall-window button:hover,
 #solution-window button:hover,
-#credit-window button:hover
-{background-color: #fff;
-color:#000;
-cursor: pointer;
+#credit-window button:hover {
+	background-color: #fff;
+	color: #000;
+	cursor: pointer;
 }
 
-.message-content{
-	text-align:center;
-	color:#fff;
-	padding:5px;
+.message-content {
+	text-align: center;
+	color: #fff;
+	padding: 5px;
 }
 
-#passwordInput{
-	text-align:center;
-	color:black;
-	margin:5px;
+#passwordInput {
+	text-align: center;
+	color: black;
+	margin: 5px;
 }
 
-#footer{
-	height:34px;
-	width:100%;
+#footer {
+	height: 34px;
+	width: 100%;
 	position: fixed;
-	padding-top:3px;
-	padding-bottom:3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	bottom: 0;
 	text-align: center;
 }
 
-.footer-button{
-	color:black;
+.footer-button {
+	color: black;
 	background-image: url(img/paper_1.jpg);
 	border-radius: .5rem .5rem 0 0;
-	margin-right:5px;
+	margin-right: 5px;
 	padding: 3px 10px 3px 10px;
-	font-size:16px;
+	font-size: 16px;
 	font-family: Elite;
 }
 
-.footer-button:hover{
-	color:#000;
+.footer-button:hover {
+	color: #000;
 	background-color: #aaa;
 	cursor: pointer;
 }
 
-#password{
-	font-size:14px;
+#password {
+	font-size: 14px;
 }
 
 .hidden {
@@ -380,140 +408,147 @@ cursor: pointer;
 }
 
 /*to stylize placeholder in text input in different browser...*/
-::-webkit-input-placeholder { /* Edge */
-  color: grey;
-  text-align:center;
+::-webkit-input-placeholder {
+	/* Edge */
+	color: grey;
+	text-align: center;
 }
 
-:-ms-input-placeholder { /* Internet Explorer */
-  color: grey;
-  text-align:center;
+:-ms-input-placeholder {
+	/* Internet Explorer */
+	color: grey;
+	text-align: center;
 }
 
 ::placeholder {
-  color: grey;
-  text-align:center;
+	color: grey;
+	text-align: center;
 }
 
 
 /*class that deals with the udrive content, tread carefully, it is working ok but very capricious*/
-ul{
-    margin: 0px 0px 0px 20px; 
-    list-style: none; line-height: 2em; font-family: Arial;
+ul {
+	margin: 0px 0px 0px 20px;
+	list-style: none;
+	line-height: 2em;
+	font-family: Arial;
 }
 
-.arbo, .folder{
-    font-size: 16px;
-    position: relative;
+.arbo,
+.folder {
+	font-size: 16px;
+	position: relative;
 }
 
-.arbo:before{
-    position: absolute;
-    left: -15px;
-    top: 0px;
-    content: '';
-    display: block;
-    border-left: 1px solid #000;
-    height: 1em;
-    border-bottom: 1px solid #000;
-    width: 10px;
+.arbo:before {
+	position: absolute;
+	left: -15px;
+	top: 0px;
+	content: '';
+	display: block;
+	border-left: 1px solid #000;
+	height: 1em;
+	border-bottom: 1px solid #000;
+	width: 10px;
 }
 
-.folder-name{
+.folder-name {
 	background: url("img/iconFolder.png") left center no-repeat;
 	content: '';
-	display:inline-block;
-	padding-left:20px;
-	height:25px;
-	color:black;
+	display: inline-block;
+	padding-left: 20px;
+	height: 25px;
+	color: black;
 }
 
-.folder-name:hover{
+.folder-name:hover {
 	text-decoration: none;
 	color: black;
 }
 
-.protected-name{
+.protected-name {
 	background: url("img/iconPassword.png") left center no-repeat;
 	content: '';
-	display:inline-block;
-	padding-left:20px;
-	height:25px;
+	display: inline-block;
+	padding-left: 20px;
+	height: 25px;
 	color: black;
 }
 
-.protected-name:hover{
+.protected-name:hover {
 	cursor: pointer;
 }
 
-.file-name{
+.file-name {
 	background: url("img/iconFile.png")left center no-repeat;
 	content: '';
-	display:inline-block;
-	padding-left:20px;
-	height:25px;
+	display: inline-block;
+	padding-left: 20px;
+	height: 25px;
 	color: black;
 }
 
-.file-name:hover{
+.file-name:hover {
 	cursor: pointer;
 }
 
 
-.arbo:after{
-    position: absolute;
-    left: -15px;
-    bottom: -7px;
-    content: '';
-    display: block;
-    border-left: 1px solid #000;
-    height: 100%;
+.arbo:after {
+	position: absolute;
+	left: -15px;
+	bottom: -7px;
+	content: '';
+	display: block;
+	border-left: 1px solid #000;
+	height: 100%;
 }
-    
-.rootLI{
+
+.rootLI {
 	font-size: 16px;
 	margin: 0px 0px 0px -20px;
 }
 
-.arbo:last-child:after{ display: none }
+.arbo:last-child:after {
+	display: none
+}
 
 /*for the animation of the windows we open and close*/
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+	from {
+		opacity: 0;
+	}
 
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
+	from {
+		opacity: 1;
+	}
 
-  to {
-    opacity: 0;
-  }
+	to {
+		opacity: 0;
+	}
 }
 
 @keyframes scaleIn {
-  from {
-    transform: scale(0);
-  }
+	from {
+		transform: scale(0);
+	}
 
-  to {
-    transform: scale(1);
-  }
+	to {
+		transform: scale(1);
+	}
 }
 
 @keyframes scaleOut {
-  from {
-    transform: scale(1);
-  }
+	from {
+		transform: scale(1);
+	}
 
-  to {
-    transform: scale(0);
-  }
+	to {
+		transform: scale(0);
+	}
 }

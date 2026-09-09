@@ -131,7 +131,7 @@
 		finalStepAdded = "Vous avez identifié le juste anonyme de la photo !" ;
 
 		/*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-		var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Nathalie",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		var missingContact = {"vid" : "Client", "vod_folder" : "","username" : "Karim Du Foins (Client)",  "canal" : "video", "avatar" : "Client.png"} ;
 
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;
