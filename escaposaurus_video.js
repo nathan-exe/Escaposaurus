@@ -36,7 +36,6 @@ function loadDataIntoHTML(){
 
 	document.getElementById("added").innerHTML = finalStepAdded ;
 
-	document.getElementById("os-name").innerHTML = OSName ;
 	document.getElementById("callerApp-name").innerHTML = callerAppName ;
 	document.getElementById("explorer-name").innerHTML = explorerName ;
 

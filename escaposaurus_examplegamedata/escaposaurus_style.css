@@ -40,7 +40,6 @@ video{max-width: 960px;}
 	max-height:800px;
 	margin: auto;
 	height:100%;
-	border:1px solid #1022CC;
 	text-align: center;
 	position:relative;
 	
@@ -74,15 +73,6 @@ video{max-width: 960px;}
 	padding:5px;
 }
 
-#os-name{
-	color:#ffffff;
-	font-size:30px;
-	font-weight: bold;
-	padding:5px;
-	background-color:#1022CC;
-	font-family: Roboto;
-}
-
 #main-game-div{
 	width:100%;
 }
@@ -94,11 +84,16 @@ video{max-width: 960px;}
 	border:1px solid white;
 	color: white;
 	text-align:center;
+	display: flex;
+	place-items: center;
 }
 
 .app-title-span{
 	font-family: Elite ;
 	font-size:24px;
+	display: flex;
+	place-items: center;
+	margin-left: 1rem;
 }
 
 /*call app*/

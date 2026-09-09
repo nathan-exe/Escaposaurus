@@ -75,7 +75,7 @@
 		var gameThanks = "Remerciements : <br/> ;)" ;
 
 		var OSName = "Special InformaticienOS 3.11- diskloaded: Escaposaurus_Example" ;
-		var explorerName = "USB DISK EXPLORER" ;
+		var explorerName = "ARCHIVES" ;
 		var callerAppName = "CALL CONTACT" ;
 
 		/*titles of video windows*/
