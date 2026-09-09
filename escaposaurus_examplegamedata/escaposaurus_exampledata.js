@@ -61,7 +61,10 @@
 		  		
 		 		],
 			"files":[
-				"scan_memo.png"]}
+				"scan_memo.png",
+				"photo_devant.jpg",
+				"photo_arriere.jpg"
+			]}
 		} ;
 
 		//situation initiale
