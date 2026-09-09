@@ -78,11 +78,15 @@ video{max-width: 960px;}
 
 #container-titre {
 	background-color: #d9d9d9;
-	max-width: 60%;
+	max-width: 80%;
 	box-shadow: 2px 2px 0 black,
 	-2px -2px 0 white;
 	color: black;
 	margin: auto auto;
+}
+
+#home-gameTitle {
+	margin: 0;
 }
 
 #container-homeMission h3{
@@ -97,6 +101,11 @@ video{max-width: 960px;}
 	-2px -2px 0 white;
 	max-width: 60%;
 	margin: auto auto;
+}
+
+#div-homeMission video {
+	width: 90%;
+	border-radius: 1rem;
 }
 
 #main-game-div{
@@ -201,7 +210,7 @@ video{max-width: 960px;}
 	padding:10px;
 	text-align: left;
 	background-image:url(img/folder.jpg);
-	border-radius: 0 0 1rem 1rem;
+	border-radius: 0 1rem 1rem 1rem;
 }
 
 #overlay-index{
@@ -212,7 +221,6 @@ video{max-width: 960px;}
 
 	width:100%;
 	height:100%;
-	border:1px solid white;
 	background-color: #bec0b1;
 	text-align: center;
 }
@@ -226,7 +234,6 @@ video{max-width: 960px;}
 	top:10%;
 	border:1px solid white;
 	background-color:#000;
-	width:1000px;
 	text-align: center;
 }
 
@@ -354,7 +361,6 @@ cursor: pointer;
 	border-radius: .5rem .5rem 0 0;
 	margin-right:5px;
 	padding: 3px 10px 3px 10px;
-	font-family: Roboto ;
 	font-size:16px;
 	font-family: Elite;
 }
@@ -424,6 +430,7 @@ ul{
 
 .folder-name:hover{
 	text-decoration: none;
+	color: black;
 }
 
 .protected-name{
@@ -432,6 +439,7 @@ ul{
 	display:inline-block;
 	padding-left:20px;
 	height:25px;
+	color: black;
 }
 
 .protected-name:hover{
@@ -444,6 +452,7 @@ ul{
 	display:inline-block;
 	padding-left:20px;
 	height:25px;
+	color: black;
 }
 
 .file-name:hover{
