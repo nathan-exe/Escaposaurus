@@ -22,9 +22,9 @@
 		var contactVideoRoot = videoRoot+"contactVideo/" ;
 
 		/*full path to intro / outro video*/
-		var missionVideoPath = videoRoot+"introVideo/intro1.mp4" ;
-		var introVideoPath = videoRoot+"introVideo/intro2.mp4" ;
-		var missingVideoPath = videoRoot+"contactVideo/missing/final.mp4" ;
+		var missionVideoPath = videoRoot+"introVideo/Client_intro.mp4" ;
+		var introVideoPath = videoRoot+"introVideo/Archiviste_intro.mp4" ;
+		var missingVideoPath = videoRoot+"contactVideo/Client_epilogue.mp4" ;
 		var epilogueVideoPath = videoRoot+"epilogueVideo/epiloguecredit.mp4" ;
 
 		/*udisk JSON path*/
@@ -51,18 +51,20 @@
 						"files":["carte1.jpg", "carte2.jpg", "carte3.jpg", "carte4.jpg"]
 					},
 					{"foldername":"Archives_Communiquations_CNR","password":"OperationDomino","placeholder":"OperationCaramel","sequence":1,
-						"files":["20180807_103031.jpg", "20180807_114356.jpg", "20180807_123538.mp4"]
+						"files":[
+							"lettre-general-de-gaulle.jpg",
+							"lettre_glegoff_p1.jpg",
+							"tract.jpg",
+						]
 					},
 					{"foldername":"Archives_Cartes_CCVR","password":"franc-tireurs","placeholder":"rouges","sequence":2,
-						
+						"files":["Etat_Nominatif.jpg"]
 					},
 					]
 			  	}
 		  		
 		 		],
-			"files":[
-				"coupure_de_presse.jpg"
-			]}
+			"files":[]}
 		} ;
 
 		//situation initiale
@@ -90,8 +92,8 @@
 		prompt[0] = "Prendre contact" ;
 		prompt[1] = "" ;
 		prompt[2] = "" ;
-		prompt[3] = "Envoyer la carte" ;
-		prompt[4] = "Appeler Nathalie pour savoir où en sont les secours." ;
+		prompt[3] = "" ;
+		prompt[4] = "" ;
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
 		var sequenceWin = 4 ;
@@ -100,10 +102,10 @@
 		/*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 		/*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 		var seqMainHint = [] ;
-		seqMainHint[0] = "nohint" ;
-		seqMainHint[1] = "nohint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-		seqMainHint[2] = "nohint" ;
-		seqMainHint[3] = "nohint" ;
+		seqMainHint[0] = "noHint" ;
+		seqMainHint[1] = "noHint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+		seqMainHint[2] = "noHint" ;
+		seqMainHint[3] = "noHint" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name*/
@@ -130,7 +132,6 @@
 		tips['Archiviste_help'][1] = "" ;
 		tips['Archiviste_help'][2] = "" ;
 		tips['Archiviste_help'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
-
 
 		/*text for the instruction / solution windows*/
 		var instructionText = {} ;

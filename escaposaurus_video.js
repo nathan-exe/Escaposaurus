@@ -557,7 +557,11 @@ function changingSequence(){
 		TinyStato.logThis(3, "newsequence", "", sequenceNumber) ;
 		mainHintFound = false ;
 		lockContacts() ;
+
+		console.log("sequence number : ");
+		console.log((sequenceNumber));
 		if(seqMainHint[sequenceNumber] == "noHint"){
+			console.log(("unlocked all contacts with noHints entry"));
 			mainHintFound = true ;
 			unlockContacts() ;
 		}
