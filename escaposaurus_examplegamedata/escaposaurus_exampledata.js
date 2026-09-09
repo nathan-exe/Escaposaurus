@@ -51,18 +51,20 @@
 						"files":["carte1.jpg", "carte2.jpg", "carte3.jpg", "carte4.jpg"]
 					},
 					{"foldername":"Archives_Communiquations_CNR","password":"OperationDomino","placeholder":"OperationCaramel","sequence":1,
-						"files":["20180807_103031.jpg", "20180807_114356.jpg", "20180807_123538.mp4"]
+						"files":[
+							"lettre-general-de-gaulle.jpg",
+							"lettre_glegoff_p1.jpg",
+							"tract.jpg",
+						]
 					},
 					{"foldername":"Archives_Cartes_CCVR","password":"franc-tireurs","placeholder":"rouges","sequence":2,
-						
+						"files":["Etat_Nominatif.jpg"]
 					},
 					]
 			  	}
 		  		
 		 		],
-			"files":[
-				"coupure_de_presse.jpg"
-			]}
+			"files":[]}
 		} ;
 
 		//situation initiale
@@ -90,8 +92,8 @@
 		prompt[0] = "Prendre contact" ;
 		prompt[1] = "" ;
 		prompt[2] = "" ;
-		prompt[3] = "Envoyer la carte" ;
-		prompt[4] = "Appeler Nathalie pour savoir où en sont les secours." ;
+		prompt[3] = "" ;
+		prompt[4] = "" ;
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
 		var sequenceWin = 4 ;
@@ -130,7 +132,6 @@
 		tips['Archiviste_help'][1] = "" ;
 		tips['Archiviste_help'][2] = "" ;
 		tips['Archiviste_help'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
-
 
 		/*text for the instruction / solution windows*/
 		var instructionText = {} ;
