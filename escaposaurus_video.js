@@ -475,17 +475,26 @@ function openVideoWindow(vid, vid_folder){
 	
 	var title ;
 	var src ;
+
+	console.log("about to open the video window.");
+	console.log("sequence number : "+String(sequenceNumber));
+	console.log("vid : "+String(vid));
+	console.log("vid folder : "+String(vid_folder));
+
 	/*according to case, deal with title and video path*/
 	if(vid == "intro" || vid == "introBis"){
+		console.log("INTRO");
 		title = titleData.introTitle ;
 		src = introVideoPath ;
 	}else if(vid == "epilogue"){
+		console.log("EPILOGUE");
 		title = titleData.epilogueTitle ;
 		src = epilogueVideoPath ;
 	}else if(vid == "missing"){
+		console.log("MISSING");
 		title = titleData.callTitle ;
 		src = missingVideoPath ;
-
+		console.log("New video source : "+src);
 		/*add listerner to launch the end of the game when player close this video*/
 		var cl = document.getElementById("btn-closecall") ;
 		cl.addEventListener("click", callbackCloseMissingCall) ;
