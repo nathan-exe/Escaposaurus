@@ -60,7 +60,9 @@
 			  	}
 		  		
 		 		],
-			"files":[]}
+			"files":[
+				"coupure_de_presse.jpg"
+			]}
 		} ;
 
 		//situation initiale
