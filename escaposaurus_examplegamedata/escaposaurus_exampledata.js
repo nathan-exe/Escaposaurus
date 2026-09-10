@@ -107,12 +107,12 @@
 		titleData.callTitle = "APPEL EN COURS..." ;
 
 		/*change of caller app prompt for each sequence*/
-		var promptDefault = "Rien à demander, ne pas les déranger." ;
+		var promptDefault = "Contacts indisponibles pour le moment." ;
 		var prompt = [] ;
 		prompt[0] = "Prendre contact" ;
-		prompt[1] = "" ;
-		prompt[2] = "" ;
-		prompt[3] = "" ;
+		prompt[1] = "Contacts" ;
+		prompt[2] = "Contacts" ;
+		prompt[3] = "Contacts" ;
 		prompt[4] = "Clore l'affaire" ;
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
@@ -124,15 +124,16 @@
 		var seqMainHint = [] ;
 		seqMainHint[0] = "Lettre_Grand_Pere.png" ;
 		seqMainHint[1] = "noHint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-		seqMainHint[2] = "CC3451.jpg" ;
-		seqMainHint[3] = "noHint" ;
+		seqMainHint[2] = "noHint" ;
+		seqMainHint[3] = "CC3451.jpg" ;
+		seqMainHint[4] = "noHint" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name*/
 		var normalContacts = [] ;
 		normalContacts[0] = {"vid" : "Archiviste", "vod_folder" : "", "username" : "George Fouille (Archiviste)", "canal" : "video", "avatar" : "Archiviste.png"} ;
-		normalContacts[1] = {"vid" : "Client", "vod_folder" : "", "username" : "Karim Du Foins (Client)", "canal" : "video", "avatar" : "Client.png"} ;
-		normalContacts[2] = {"vid" : "Vieux", "vod_folder" : "", "username" : "Jean Luc Des Prés (Vétéran)", "canal" : "video", "avatar" : "Vieux.png"} ;
+		//normalContacts[1] = {"vid" : "Client", "vod_folder" : "", "username" : "Karim Du Foins (Client)", "canal" : "video", "avatar" : "Client.png"} ;
+		normalContacts[1] = {"vid" : "Vieux", "vod_folder" : "", "username" : "Jean Luc Des Prés (Vétéran)", "canal" : "video", "avatar" : "Vieux.png"} ;
 
 		/*second part of the list, contact that can help the player*/
 		var helperContacts = [] ;
@@ -148,19 +149,19 @@
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;
 		tips['Archiviste_help'] = [] ;
-		tips['Archiviste_help'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom d'un guide ? Je crois que les contacts sont des guides justement, essayez peut-être de les appeler." ;
-		tips['Archiviste_help'][1] = "" ;
-		tips['Archiviste_help'][2] = "" ;
-		tips['Archiviste_help'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
+		tips['Archiviste_help'][0] = "TODO" ;
+		tips['Archiviste_help'][1] = "TODO" ;
+		tips['Archiviste_help'][2] = "TODO" ;
+		tips['Archiviste_help'][3] = "TODO" ;
 
 		/*text for the instruction / solution windows*/
 		var instructionText = {} ;
-		instructionText.winState = "Vous avez retrouvé l'id GPS et vous pouvez appeler les secours du secteur." ;
-		instructionText.lackMainHint = "" ;
-		instructionText.password = "Vous devez trouver et entrer le mot de passe d'un des dossiers de la boite de droite. Vous pouvez trouver le mot de passe en appelant les contacts de la boite de gauche.<br/>Pour entrer un mot de passe, cliquez sur le nom d'un dossier et une fenêtre s'affichera pour que vous puissiez donner le mot de passe." ;
+		instructionText.winState = "TODO" ;
+		instructionText.lackMainHint = "TODO" ;
+		instructionText.password = "TODO" ;
 
 		/*please note the %s into the text that allow to automatically replace them with the right content according to which sequence the player is in*/
 		var solutionText = {} ;
-		solutionText.winState = "Si Sabine a été secourue, le jeu est fini bravo." ;
-		solutionText.lackMainHint = "Vous devez ouvrir le fichier <b>%s</b><br/>" ;
-		solutionText.password = "Vous devez déverouiller le dossier <b>%s1</b><br/>avec le mot de passe : <b>%s2</b><br/>" ;
+		solutionText.winState = "TODO" ;
+		solutionText.lackMainHint = "TODO" ;
+		solutionText.password = "TODO" ;
