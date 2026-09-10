@@ -476,6 +476,8 @@ function openContactTxTWindow(vid, bigAvatarHelper){
 	}
 }
 
+var endingVideo = false;
+
 /*open/close video windows*/
 function openVideoWindow(vid, vid_folder){
 	var x = document.getElementById("callVideo-content") ;
@@ -499,6 +501,7 @@ function openVideoWindow(vid, vid_folder){
 		console.log("EPILOGUE");
 		title = titleData.epilogueTitle ;
 		src = epilogueVideoPath ;
+		endingVideo = true;
 	}else if(vid == "missing"){
 		console.log("MISSING");
 		title = titleData.callTitle ;
@@ -564,6 +567,9 @@ function closeIt(nameId){
 		},280);
 	*/
 	TinyStato.logThis(11, "closeit", nameId, sequenceNumber) ;
+	if(endingVideo == true) {
+		openIt("credit-window")
+	}
 }
 
 
