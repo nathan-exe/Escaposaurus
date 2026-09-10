@@ -77,6 +77,10 @@ video {
 }
 
 
+#message-window img {
+	max-width: 100%;
+}
+
 #callerApp-name,
 #explorer-name
 {
