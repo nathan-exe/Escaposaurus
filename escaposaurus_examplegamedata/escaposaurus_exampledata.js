@@ -52,7 +52,7 @@
 			  		"files":[],
 			  		"folders":[
 					//sequence 1 : articles de journaux
-					{"foldername":"Archives_Presse","password":["saintMoulin1940"],"placeholder":"Paris1920","sequence":0,
+					{"foldername":"Archives_Presse","password":["saintMoulin1940","stmoulin1940"],"placeholder":"Paris1920","sequence":0,
 						"files":[
 							"LPP_12041940.jpg",
 							"LPP_08071940.jpg"
