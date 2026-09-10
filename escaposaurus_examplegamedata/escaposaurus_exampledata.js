@@ -52,14 +52,14 @@
 			  		"files":[],
 			  		"folders":[
 					//sequence 1 : articles de journaux
-					{"foldername":"Archives_Presse","password":"saintMoulin1940","placeholder":"Paris1920","sequence":0,
+					{"foldername":"Archives_Presse","password":["saintMoulin1940"],"placeholder":"Paris1920","sequence":0,
 						"files":[
 							"LPP_12041940.jpg",
 							"LPP_08071940.jpg"
 						]
 					},
 					//sequence 2 : lettre codée
-					{"foldername":"Archives_Communiquations_CNR","password":"OperationDomino","placeholder":"OperationCaramel","sequence":1,
+					{"foldername":"Archives_Communiquations_CNR","password":["OperationDomino", "OpérationDomino"],"placeholder":"OperationCaramel","sequence":1,
 						"files":[
 							"lettre_0899.jpg",
 							"lettre_1534.jpg",
@@ -68,7 +68,7 @@
 						]
 					},
 					//sequence 3 : cartes d'identité
-					{"foldername":"Archives_Cartes_CCVR","password":"franc-tireurs","placeholder":"rouges","sequence":2,
+					{"foldername":"Archives_Cartes_CCVR","password":["francs-tireurs", "franc-tireurs", "francs-tireur", "franc-tireur"],"placeholder":"rouges","sequence":2,
 						"files":[
 							"CC3451.jpg",
 							"CC4310.jpg",
@@ -76,7 +76,7 @@
 							"CC1247.jpg",
 						]
 					},
-					{"foldername":"Archives_Resistants_CCVR","password":"yves-le-champ","placeholder":"AxelBuendia","sequence":3,
+					{"foldername":"Archives_Resistants_CCVR","password":["yves-le-champs", "yve-le-champs", "yves-le-champ", "yve-le-champ"],"placeholder":"AxelBuendia","sequence":3,
 						"files":[]
 					}
 					]

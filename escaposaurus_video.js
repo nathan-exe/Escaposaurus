@@ -193,7 +193,7 @@ function arborescence(folders, files, parent, fullpath){
 		for (var i = 0; i < folders.length; i++){
 		    var obj = folders[i];
 		    //console.log("a folder" + obj.foldername) ;
-		    var password = (obj.password == undefined)?"":obj.password;
+		    var password = (obj.password == undefined)?[]:obj.password;
 		    var seqNumber = (obj.password == undefined)?"":obj.sequence;
 			var placeholder = (obj.placeholder == undefined)?"":obj.placeholder;
 		    cFolder(obj.foldername, parent, password, placeholder, seqNumber) ;
@@ -222,7 +222,7 @@ function cFolder(name, parent, password, placeholder, seqNumber){
 		sequenceFolder[seqNumber] = name ;
 	}
 	folderState[name] = 0 ;
-	if(password != ""){
+	if(password.length > 0){
 		lockedFolder.push(name) ;
 		folderState[name] = 1 ;
 	}
@@ -235,7 +235,7 @@ function cFolder(name, parent, password, placeholder, seqNumber){
 	elem.classList.add("arbo") ;
 
 	var elemA = document.createElement('a') ;
-	if(password != ""){
+	if(password.length > 0){
 		elemA.classList.add("protected-name") ;
 		elemA.setAttribute("onclick", "openPasswordPrompt('"+name+"','"+placeholder+"')") ;
 	}else{
@@ -367,7 +367,7 @@ function unlockFolder(unlockedFolder){
 
 function isItPasswordProtected(foldername){
 	if(passwordCenter[foldername] != null
-		&& passwordCenter[foldername] != ""){
+		&& passwordCenter[foldername].length > 0){
 		return true;
 	}else{
 		return false;
@@ -376,14 +376,22 @@ function isItPasswordProtected(foldername){
 
 function doThePasswordMatch(userTry, foldername){
 	var userTryCleared = userTry.replace(/[^a-z0-9]/gi, '') ;
-	var passwordCleared = passwordCenter[foldername].replace(/[^a-z0-9]/gi, '') ;
+	var passwordsCleared = [];
+	passwordCenter[foldername].forEach(element => {
+		passwordsCleared.push(element.replace(/[^a-z0-9]/gi, ''))
+	});
 
-	if(isItPasswordProtected(foldername)
-		&& passwordCleared.toLowerCase() == userTryCleared.toLowerCase()){
-		return true;
-	}else{
-		return false;
+	if(isItPasswordProtected(foldername)) {
+		var passwordIsGood = false;
+		passwordsCleared.forEach(element => {
+			if(element.toLowerCase() == userTryCleared.toLowerCase()) {
+				passwordIsGood = true;
+				return;
+			}
+		});
+		return passwordIsGood;
 	}
+	return false;
 }
 
 function checkIfEnter(e, userTry, foldername){
