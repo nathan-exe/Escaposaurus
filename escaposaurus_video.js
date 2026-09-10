@@ -488,6 +488,7 @@ function openVideoWindow(vid, vid_folder){
 	console.log("sequence number : "+String(sequenceNumber));
 	console.log("vid : "+String(vid));
 	console.log("vid folder : "+String(vid_folder));
+	console.log("main hint found : "+String(mainHintFound));
 
 	/*according to case, deal with title and video path*/
 	if(vid == "intro" || vid == "introBis"){
@@ -635,6 +636,7 @@ function openEpilogue(){
 		openVideoWindow('epilogue') ;
 		var x = document.getElementById('button-outro');
 		x.style.animation = [animation.scaleIn, animation.fadeIn];
+		x.style.animationTimingFunction = 'ease';
 		x.classList.remove('hidden');
 	},1000);
 }
