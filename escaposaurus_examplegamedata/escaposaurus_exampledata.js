@@ -74,6 +74,7 @@
 							"CC4310.jpg",
 							"CC9123.jpg",
 							"CC1247.jpg",
+							"Etat_Nominatif.jpg"
 						]
 					},
 					{"foldername":"Archives_Resistants_CCVR","password":["yves-le-champs", "yve-le-champs", "yves-le-champ", "yve-le-champ"],"placeholder":"AxelBuendia","sequence":3,
