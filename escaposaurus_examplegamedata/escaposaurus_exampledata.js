@@ -68,7 +68,7 @@
 						]
 					},
 					//sequence 3 : cartes d'identité
-					{"foldername":"Archives_Cartes_CCVR","password":["francs-tireurs", "franc-tireurs", "francs-tireur", "franc-tireur"],"placeholder":"rouges","sequence":2,
+					{"foldername":"Archives_Cartes_CCVR","password":["francs-tireurs", "franc-tireurs", "francs-tireur", "franc-tireur"],"placeholder":"liberationSud","sequence":2,
 						"files":[
 							"CC3451.jpg",
 							"CC4310.jpg",
