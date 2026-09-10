@@ -24,7 +24,7 @@
 		/*full path to intro / outro video*/
 		var missionVideoPath = videoRoot+"introVideo/Client_intro.mp4" ;
 		var introVideoPath = videoRoot+"introVideo/Archiviste_intro.mp4" ;
-		var missingVideoPath = videoRoot+"contactVideo/Client_epilogue.mp4" ;
+		var missingVideoPath = videoRoot+"epilogueVideo/Client_epilogue.mp4" ;
 		var epilogueVideoPath = videoRoot+"epilogueVideo/epiloguecredit.mp4" ;
 
 		/*udisk JSON path*/
@@ -113,7 +113,7 @@
 		prompt[1] = "" ;
 		prompt[2] = "" ;
 		prompt[3] = "" ;
-		prompt[4] = "" ;
+		prompt[4] = "Clore l'affaire" ;
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
 		var sequenceWin = 4 ;
@@ -125,7 +125,7 @@
 		seqMainHint[0] = "Lettre_Grand_Pere.png" ;
 		seqMainHint[1] = "noHint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
 		seqMainHint[2] = "CC3451.jpg" ;
-		//seqMainHint[3] = "noHint" ;
+		seqMainHint[3] = "noHint" ;
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name*/
@@ -143,7 +143,7 @@
 		finalStepAdded = "Vous avez identifié le juste anonyme de la photo !" ;
 
 		/*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-		var missingContact = {"vid" : "Client", "vod_folder" : "","username" : "Karim Du Foins (Client)",  "canal" : "video", "avatar" : "Client.png"} ;
+		var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Karim Du Foins (Client)",  "canal" : "video", "avatar" : "Client.png"} ;
 
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;
