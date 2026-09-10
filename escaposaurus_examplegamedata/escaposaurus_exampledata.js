@@ -25,7 +25,7 @@
 		var missionVideoPath = videoRoot+"introVideo/Client_intro.mp4" ;
 		var introVideoPath = videoRoot+"introVideo/Archiviste_intro.mp4" ;
 		var missingVideoPath = videoRoot+"epilogueVideo/Client_epilogue.mp4" ;
-		var epilogueVideoPath = videoRoot+"epilogueVideo/epiloguecredit.mp4" ;
+		var epilogueVideoPath = videoRoot+"epilogueVideo/VIEUX_FIN.mp4" ;
 
 		/*udisk JSON path*/
 		var udiskRoot = gameDataRoot+"udisk/" ;
