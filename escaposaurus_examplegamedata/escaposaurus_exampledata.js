@@ -150,10 +150,10 @@
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;
 		tips['Archiviste_help'] = [] ;
-		tips['Archiviste_help'][0] = "TODO" ;
-		tips['Archiviste_help'][1] = "TODO" ;
-		tips['Archiviste_help'][2] = "TODO" ;
-		tips['Archiviste_help'][3] = "TODO" ;
+		tips['Archiviste_help'][0] = "Portez votre attention sur les documents afin de trouver le nom d'une ville suivi d'une date." ;
+		tips['Archiviste_help'][1] = "Portez votre attention sur l'un des documents afin de trouver le nom d'une opération spécifique." ;
+		tips['Archiviste_help'][2] = "Faites la correspondance entre l'un des documents dans le Dossier_Karim_DuFoin ainsi que le dossier Archives_Communications_CNR. \nAttendez vous à trouver deux mots grâce à cette correspondance" ;
+		tips['Archiviste_help'][3] = "Regardez attentivement les numéros présents dans le tableau au regard des premiers documents présents dans le jeu. " ;
 
 		/*text for the instruction / solution windows*/
 		var instructionText = {} ;
