@@ -215,6 +215,7 @@ video {
 
 #callApp-help,
 #callApp-prompt {
+	font-family: Typewriter;
 	font-size: 18px;
 	padding: 10px;
 	text-align: center;
