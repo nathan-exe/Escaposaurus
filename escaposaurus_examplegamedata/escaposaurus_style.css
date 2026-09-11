@@ -78,6 +78,7 @@ video {
 
 #message-window img {
 	max-width: 100%;
+	max-height: 200px;
 }
 
 #callerApp-name,
@@ -332,6 +333,7 @@ video {
 	max-width: 400px;
 	min-width: 200px;
 	margin: auto auto;
+	max-height: 60vh;
 }
 
 #passPrompt-window {
