@@ -132,13 +132,13 @@
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name*/
 		var normalContacts = [] ;
-		normalContacts[0] = {"vid" : "Archiviste", "vod_folder" : "", "username" : "George Fouille (Archiviste)", "canal" : "video", "avatar" : "Archiviste.png"} ;
+		normalContacts[0] = {"vid" : "Archiviste", "vod_folder" : "", "username" : "George Fouille (Archiviste)", "canal" : "video", "avatar" : "Archiviste.jpg"} ;
 		//normalContacts[1] = {"vid" : "Client", "vod_folder" : "", "username" : "Karim Du Foins (Client)", "canal" : "video", "avatar" : "Client.png"} ;
 		normalContacts[1] = {"vid" : "Vieux", "vod_folder" : "", "username" : "Jean Luc Des Prés (Vétéran)", "canal" : "video", "avatar" : "Vieux.png"} ;
 
 		/*second part of the list, contact that can help the player*/
 		var helperContacts = [] ;
-		helperContacts[0] = {"vid" : "Archiviste_help", "vod_folder" : "", "username" : "George Fouille (pour avoir un indice)", "canal" : "txt", "avatar" : "Archiviste_help.png", "bigAvatar" : "Archiviste_help.png"} ;
+		helperContacts[0] = {"vid" : "Archiviste_help", "vod_folder" : "", "username" : "George Fouille (pour avoir un indice)", "canal" : "txt", "avatar" : "Archiviste_help.jpg", "bigAvatar" : "Archiviste_help.jpg"} ;
 		/*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 		/*ce qui apparait quand on trouve le dernier élément du disque dur*/
