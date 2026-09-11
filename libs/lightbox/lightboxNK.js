@@ -25,7 +25,8 @@ function startLighBox(){
       fadeIn: 'fadeIn .3s',
       fadeOut: 'fadeOut .3s',
       scaleIn: 'scaleIn .3s',
-      scaleOut: 'scaleOut .3s'
+      scaleOut: 'scaleOut .3s',
+      scaleInBase: 'scaleInBase .3s'
     };
 
     const classes = {
@@ -163,7 +164,7 @@ function startLighBox(){
 
       wrapper = content.cloneNode(false);
       wrapper.className = 'lightbox-wrapper';
-      wrapper.style.animation = [animation.scaleIn, animation.fadeIn];
+      wrapper.style.animation = [animation.scaleInBase, animation.fadeIn];
       wrapper.appendChild(btnClose);
       wrapper.appendChild(content);
 
